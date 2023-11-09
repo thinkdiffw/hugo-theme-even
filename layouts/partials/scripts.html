@@ -97,7 +97,7 @@
   {{ template "_internal/google_analytics_async.html" . }}
 {{- end -}}
 
-{{- with .Site.Params.googleTagId -}}
+{{- if .Site.Params.googleTagId -}}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id="{{ .Site.Params.googleTagId }}></script>
 <script>
